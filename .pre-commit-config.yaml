@@ -1,0 +1,5 @@
+repos:
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: 772d7ffaeee5d611a904cc564a3fe3c7ad927635 #v3.2.0
+    hooks:
+      - id: conventional-pre-commit
