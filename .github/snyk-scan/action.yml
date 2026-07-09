@@ -1,14 +1,33 @@
 name: Snyk Scan
 
+description: Run Snyk dependency scan
+
 runs:
-  using: 'composite'
+  using: composite
 
   steps:
+
     - name: Setup Snyk CLI
       uses: snyk/actions/setup@9adf32b1121593767fc3c057af55b55db032dc04 # v1.0.0
 
-    - name: Run Snyk scan
-      run: snyk test -d --all-projects --severity-threshold=high --sarif-file-output=snyk.sarif --policy-path=./.snyk
+    - name: Scan glad-bom
+      shell: bash
+      run: |
+        snyk test \
+          --file=glad-bom/pom.xml \
+          --severity-threshold=high \
+          --sarif-file-output=snyk-glad-bom.sarif \
+          --policy-path=./.snyk
       env:
         SNYK_TOKEN: ${{ env.SNYK_TOKEN }}
+
+    - name: Scan glad-parent
       shell: bash
+      run: |
+        snyk test \
+          --file=glad-parent/pom.xml \
+          --severity-threshold=high \
+          --sarif-file-output=snyk-glad-parent.sarif \
+          --policy-path=./.snyk
+      env:
+        SNYK_TOKEN: ${{ env.SNYK_TOKEN }}

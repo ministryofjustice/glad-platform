@@ -30,8 +30,26 @@ jobs:
           server-username: GITHUB_ACTOR
           server-password: GITHUB_TOKEN
 
-      - name: Build
-        run: mvn --batch-mode clean validate
+      - name: Determine module
+        id: module
+        shell: bash
+        run: |
+          TAG="${{ github.event.release.tag_name }}"
+
+          if [[ "$TAG" == glad-bom-* ]]; then
+            echo "module=glad-bom" >> "$GITHUB_OUTPUT"
+          elif [[ "$TAG" == glad-parent-* ]]; then
+            echo "module=glad-parent" >> "$GITHUB_OUTPUT"
+          else
+            echo "Unknown release tag: $TAG"
+            exit 1
+          fi
+
+      - name: Build module
+        run: |
+          mvn --batch-mode \
+            -pl ${{ steps.module.outputs.module }} \
+            clean verify
 
       - name: Setup Snyk CLI
         uses: snyk/actions/setup@9adf32b1121593767fc3c057af55b55db032dc04 # v1.0.0
@@ -39,8 +57,10 @@ jobs:
       - name: Snyk Scan
         run: |
           snyk test \
+            --file=${{ steps.module.outputs.module }}/pom.xml \
             --severity-threshold=high \
-            --sarif-file-output=snyk.sarif
+            --sarif-file-output=snyk.sarif \
+            --policy-path=./.snyk
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
@@ -49,7 +69,10 @@ jobs:
         with:
           sarif_file: snyk.sarif
 
-      - name: Publish Package
-        run: mvn --batch-mode deploy
+      - name: Publish Maven Package
+        run: |
+          mvn --batch-mode \
+            -pl ${{ steps.module.outputs.module }} \
+            deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
