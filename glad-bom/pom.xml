@@ -10,16 +10,12 @@
     </parent>
 
     <artifactId>glad-bom</artifactId>
+    <packaging>pom</packaging>
 
     <properties>
-        <maven.compiler.source>25</maven.compiler.source>
-        <maven.compiler.target>25</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Platform Versions -->
-        <spring-boot.version>4.1.0</spring-boot.version>
         <aws.sdk.version>2.46.17</aws.sdk.version>
         <cucumber.version>7.34.3</cucumber.version>
         <spring-cloud-azure.version>7.3.0</spring-cloud-azure.version>
@@ -38,15 +34,6 @@
 
     <dependencyManagement>
         <dependencies>
-
-            <!-- Spring Boot -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
 
             <!-- AWS -->
             <dependency>
