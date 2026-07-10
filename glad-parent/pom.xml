@@ -27,7 +27,7 @@
         <java.version>25</java.version>
 
         <!-- Version of the BOM imported by this parent.
-             This is intentionally independently of the parent version so the BOM
+             This is intentionally independent of the parent version so the BOM
              can be released separately for dependency/CVE updates. -->
         <glad-bom.version>0.1.0</glad-bom.version>
     </properties>

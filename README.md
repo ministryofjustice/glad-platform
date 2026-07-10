@@ -49,7 +49,7 @@ Consumer GLAD service(s)
 
 ---
 
-# Modules
+## Modules
 
 ## glad-bom
 
@@ -110,7 +110,7 @@ org.springframework.boot:spring-boot-starter-parent
 
 ---
 
-# Using GLAD Platform in a Consumer Repository
+## Using GLAD Platform in a Consumer Repository
 
 ## 1. Configure the parent
 
@@ -163,7 +163,7 @@ The platform decides which versions are used.
 
 ---
 
-# Dependency Updates and CVE Management
+## Dependency Updates and CVE Management
 
 The point of the platform is that dependency versions are updated in one place.
 
@@ -209,7 +209,7 @@ No individual repository needs to manage the dependency version.
 
 ---
 
-# Building GLAD Platform Locally
+## Building GLAD Platform Locally
 
 From the root directory:
 
@@ -230,7 +230,7 @@ dependency management BOM or application parent.**
 
 ---
 
-# Module Responsibilities
+## Module Responsibilities
 
 | Module | Responsibility |
 |---|---|
@@ -240,7 +240,7 @@ dependency management BOM or application parent.**
 
 ---
 
-# Design Principles
+## Design Principles
 
 ## Services own dependencies
 
@@ -265,7 +265,7 @@ The platform decides:
 
 ---
 
-# Future Extensions
+## Future Extensions
 
 The platform can be extended to include:
 
