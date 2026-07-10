@@ -45,17 +45,6 @@ jobs:
             exit 1
           fi
 
-      - name: Validate BOM dependency exists
-        if: steps.module.outputs.module == 'glad-parent'
-        shell: bash
-        run: |
-          echo "Validating glad-bom dependency is available..."
-
-          mvn --batch-mode \
-            --settings .github/settings.xml \
-            dependency:get \
-            -Dartifact=uk.gov.laa:glad-bom:0.1.0:pom
-
       - name: Build module
         run: |
           mvn --batch-mode \
