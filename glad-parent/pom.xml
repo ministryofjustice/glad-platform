@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.1.0</version>
+
+        <!-- Disable local relative path resolution to avoid issues with Maven's parent POM resolution in
+        multi-module projects. This ensures that the correct parent POM is used, regardless of the local
+        file system structure. -->
+        <relativePath/>
+    </parent>
+
+    <groupId>uk.gov.laa</groupId>
+    <artifactId>glad-parent</artifactId>
+    <version>0.1.0</version>
+    <packaging>pom</packaging>
+
+    <name>GLAD Parent</name>
+
+    <properties>
+        <java.version>25</java.version>
+
+        <!-- Version of the BOM imported by this parent.
+             This is intentionally independent of the parent version so the BOM
+             can be released separately for dependency/CVE updates. -->
+        <glad-bom.version>0.1.0</glad-bom.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>uk.gov.laa</groupId>
+                <artifactId>glad-bom</artifactId>
+                <version>${glad-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/ministryofjustice/glad-platform</url>
+        </repository>
+    </distributionManagement>
+
+</project>

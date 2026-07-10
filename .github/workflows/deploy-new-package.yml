@@ -30,26 +30,60 @@ jobs:
           server-username: GITHUB_ACTOR
           server-password: GITHUB_TOKEN
 
-      - name: Build
-        run: mvn --batch-mode clean validate
+      - name: Determine module
+        id: module
+        shell: bash
+        run: |
+          TAG="${{ github.event.release.tag_name }}"
 
-      - name: Setup Snyk CLI
-        uses: snyk/actions/setup@9adf32b1121593767fc3c057af55b55db032dc04 # v1.0.0
+          if [[ "$TAG" == glad-bom-* ]]; then
+            echo "module=glad-bom" >> "$GITHUB_OUTPUT"
+          elif [[ "$TAG" == glad-parent-* ]]; then
+            echo "module=glad-parent" >> "$GITHUB_OUTPUT"
+          else
+            echo "Unknown release tag: $TAG"
+            exit 1
+          fi
+
+      - name: Validate BOM dependency exists
+        if: steps.module.outputs.module == 'glad-parent'
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Validating glad-bom dependency is available..."
+
+          GLAD_BOM_VERSION=$(mvn help:evaluate \
+            -pl glad-parent \
+            -Dexpression=glad-bom.version \
+            -q \
+            -DforceStdout)
+
+          echo "glad-parent requires glad-bom:${GLAD_BOM_VERSION}"
+
+          mvn --batch-mode dependency:get \
+            -Dartifact=uk.gov.laa:glad-bom:${GLAD_BOM_VERSION}:pom \
+            -DremoteRepositories=github::default::https://maven.pkg.github.com/ministryofjustice/glad-platform
+
+      - name: Build module
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mvn --batch-mode \
+            -f ${{ steps.module.outputs.module }}/pom.xml \
+            clean verify
 
       - name: Snyk Scan
-        run: |
-          snyk test \
-            --severity-threshold=high \
-            --sarif-file-output=snyk.sarif
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-
-      - name: Upload Snyk SARIF
-        uses: github/codeql-action/upload-sarif@54f647b7e1bb85c95cddabcd46b0c578ec92bc1a # v4.36.3
+        uses: './.github/snyk-scan'
         with:
-          sarif_file: snyk.sarif
+          snyk-token: ${{ secrets.SNYK_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish Package
-        run: mvn --batch-mode deploy
+      - name: Publish Maven Package
+        run: |
+          mvn --batch-mode \
+            -f ${{ steps.module.outputs.module }}/pom.xml \
+            deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
