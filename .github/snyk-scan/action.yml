@@ -40,11 +40,12 @@ runs:
         --policy-path=./.snyk
 
     - name: Upload glad-bom SARIF
+      if: always()
       uses: github/codeql-action/upload-sarif@54f647b7e1bb85c95cddabcd46b0c578ec92bc1a # v4.36.3
       with:
         sarif_file: snyk-glad-bom.sarif
-
     - name: Upload glad-parent SARIF
+      if: always()
       uses: github/codeql-action/upload-sarif@54f647b7e1bb85c95cddabcd46b0c578ec92bc1a # v4.36.3
       with:
         sarif_file: snyk-glad-parent.sarif
