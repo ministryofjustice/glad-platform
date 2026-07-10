@@ -17,11 +17,4 @@
         <module>glad-bom</module>
     </modules>
 
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/ministryofjustice/glad-platform</url>
-        </repository>
-    </distributionManagement>
-
 </project>
