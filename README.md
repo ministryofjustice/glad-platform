@@ -39,7 +39,7 @@ Consumer GLAD service(s)
         |
         +-- imports glad-bom
                     |
-                    +-- Spring ecosystem versions
+                    +-- Spring ecosystem versions (via spring-boot-starter-parent)
                     +-- AWS SDK versions
                     +-- Azure versions
                     +-- Cucumber versions
