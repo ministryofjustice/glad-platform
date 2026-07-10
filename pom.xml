@@ -13,8 +13,8 @@
     <name>GLAD Platform</name>
 
     <modules>
-        <module>glad-parent</module>
         <module>glad-bom</module>
+        <module>glad-parent</module>
     </modules>
 
 </project>
