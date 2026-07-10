@@ -24,7 +24,7 @@
 
         <!-- Shared Libraries -->
         <springdoc.version>3.0.3</springdoc.version>
-        <playwright.version>1.60.0</playwright.version>
+        <playwright.version>1.61.0</playwright.version>
         <axe.version>4.11.3</axe.version>
         <payforlegalaid-openapi.version>0.0.40</payforlegalaid-openapi.version>
     </properties>
