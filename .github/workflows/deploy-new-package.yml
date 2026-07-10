@@ -60,7 +60,8 @@ jobs:
           echo "glad-parent requires glad-bom:${GLAD_BOM_VERSION}"
 
           mvn --batch-mode dependency:get \
-            -Dartifact=uk.gov.laa:glad-bom:${GLAD_BOM_VERSION}:pom
+            -Dartifact=uk.gov.laa:glad-bom:${GLAD_BOM_VERSION}:pom \
+            -DremoteRepositories=github::default::https://maven.pkg.github.com/ministryofjustice/glad-platform
 
       - name: Build module
         run: |
