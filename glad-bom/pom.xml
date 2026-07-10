@@ -18,7 +18,7 @@
         <spring-cloud-azure.version>7.3.0</spring-cloud-azure.version>
 
         <!-- Common CVE/Snyk Targets -->
-        <logback.version>1.5.36</logback.version>
+        <logback.version>1.5.37</logback.version>
         <tomcat.version>11.0.24</tomcat.version>
         <poi.version>5.5.1</poi.version>
 
