@@ -1,0 +1,32 @@
+name: PR Snyk Scan
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  snyk:
+    name: Snyk Dependency Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Set up Java
+        uses: actions/setup-java@1bcf9fb12cf4aa7d266a90ae39939e61372fe520 # v5.4.0
+        with:
+          distribution: corretto
+          java-version: '25'
+
+      - name: Run Snyk Scan
+        uses: ./.github/actions/snyk-scan
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
