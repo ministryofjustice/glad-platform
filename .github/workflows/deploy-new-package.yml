@@ -45,6 +45,23 @@ jobs:
             exit 1
           fi
 
+      - name: Validate BOM dependency exists
+        if: steps.module.outputs.module == 'glad-parent'
+        shell: bash
+        run: |
+          echo "Validating glad-bom dependency is available..."
+
+          GLAD_BOM_VERSION=$(mvn help:evaluate \
+            -pl glad-parent \
+            -Dexpression=glad-bom.version \
+            -q \
+            -DforceStdout)
+
+          echo "glad-parent requires glad-bom:${GLAD_BOM_VERSION}"
+
+          mvn --batch-mode dependency:get \
+            -Dartifact=uk.gov.laa:glad-bom:${GLAD_BOM_VERSION}:pom
+
       - name: Build module
         run: |
           mvn --batch-mode \
