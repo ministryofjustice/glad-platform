@@ -4,7 +4,7 @@ The GLAD Platform provides a centralised Maven dependency and build management s
 
 It provides:
 
-- A central dependency management Software Bill of Materials (SBOM) (`glad-bom`)
+- A central dependency management Maven Bill of Materials (BOM) (`glad-bom`)
 - A standard Maven parent POM (`glad-parent`)
 - A single place to manage dependency versions, CVE fixes, build standards, and common tooling
 
@@ -53,7 +53,7 @@ Consumer GLAD service(s)
 
 ## glad-bom
 
-`glad-bom` is a Maven Software Bill of Materials (SBOM).
+`glad-bom` is a Maven Bill of Materials (BOM).
 
 Its sole responsibility is dependency version management. It defines versions for dependencies used across GLAD services.
 
