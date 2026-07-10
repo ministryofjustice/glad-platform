@@ -19,7 +19,7 @@
 
         <!-- Common CVE/Snyk Targets -->
         <logback.version>1.5.36</logback.version>
-        <tomcat.version>11.0.23</tomcat.version>
+        <tomcat.version>11.0.24</tomcat.version>
         <poi.version>5.5.1</poi.version>
 
         <!-- Shared Libraries -->
