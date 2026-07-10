@@ -21,10 +21,11 @@ runs:
         SNYK_TOKEN: ${{ inputs.snyk-token }}
       run: |
         snyk test \
-          --file=glad-bom/pom.xml \
-          --severity-threshold=high \
-          --sarif-file-output=snyk-glad-bom.sarif \
-          --policy-path=./.snyk
+        --package-manager=maven \
+        --file=glad-bom/pom.xml \
+        --severity-threshold=high \
+        --sarif-file-output=snyk-glad-bom.sarif \
+        --policy-path=./.snyk
 
     - name: Scan glad-parent
       shell: bash
@@ -32,10 +33,11 @@ runs:
         SNYK_TOKEN: ${{ inputs.snyk-token }}
       run: |
         snyk test \
-          --file=glad-parent/pom.xml \
-          --severity-threshold=high \
-          --sarif-file-output=snyk-glad-parent.sarif \
-          --policy-path=./.snyk
+        --package-manager=maven \
+        --file=glad-parent/pom.xml \
+        --severity-threshold=high \
+        --sarif-file-output=snyk-glad-parent.sarif \
+        --policy-path=./.snyk
 
     - name: Upload glad-bom SARIF
       uses: github/codeql-action/upload-sarif@54f647b7e1bb85c95cddabcd46b0c578ec92bc1a # v4.36.3

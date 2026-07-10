@@ -26,6 +26,10 @@ jobs:
           distribution: corretto
           java-version: '25'
 
+      - name: Build Maven reactor
+        run: |
+          mvn --batch-mode install -DskipTests
+
       - name: Run Snyk Scan
         uses: ./.github/snyk-scan
         with:
