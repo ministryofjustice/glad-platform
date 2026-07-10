@@ -224,7 +224,9 @@ glad-bom
 glad-parent
 ```
 
-**The root `glad-platform` POM is an aggregator only.**
+**The root glad-platform POM is the Maven reactor aggregator for the platform modules. 
+It coordinates building glad-bom and glad-parent together but is not intended to be consumed directly as a 
+dependency management BOM or application parent.**
 
 ---
 
