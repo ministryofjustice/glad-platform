@@ -45,33 +45,14 @@ jobs:
             exit 1
           fi
 
-      - name: Validate BOM dependency exists
-        if: steps.module.outputs.module == 'glad-parent'
-        shell: bash
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "Validating glad-bom dependency is available..."
-
-          GLAD_BOM_VERSION=$(mvn help:evaluate \
-            -pl glad-parent \
-            -Dexpression=glad-bom.version \
-            -q \
-            -DforceStdout)
-
-          echo "glad-parent requires glad-bom:${GLAD_BOM_VERSION}"
-
-          mvn --batch-mode dependency:get \
-            -Dartifact=uk.gov.laa:glad-bom:${GLAD_BOM_VERSION}:pom \
-            -DremoteRepositories=github::default::https://maven.pkg.github.com/ministryofjustice/glad-platform
-
       - name: Build module
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mvn --batch-mode \
+            --settings .github/settings.xml \
             -f ${{ steps.module.outputs.module }}/pom.xml \
             clean verify
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Snyk Scan
         uses: './.github/snyk-scan'
@@ -83,6 +64,7 @@ jobs:
       - name: Publish Maven Package
         run: |
           mvn --batch-mode \
+            --settings .github/settings.xml \
             -f ${{ steps.module.outputs.module }}/pom.xml \
             deploy
         env:
