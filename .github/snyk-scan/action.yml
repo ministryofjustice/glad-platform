@@ -11,6 +11,14 @@ runs:
   using: composite
 
   steps:
+    - name: Set up Java
+      uses: actions/setup-java@...
+      with:
+        distribution: corretto
+        java-version: '25'
+        server-id: github
+        server-username: GITHUB_ACTOR
+        server-password: GITHUB_TOKEN
 
     - name: Setup Snyk CLI
       uses: snyk/actions/setup@9adf32b1121593767fc3c057af55b55db032dc04 # v1.0.0
@@ -21,7 +29,6 @@ runs:
       shell: bash
       env:
         SNYK_TOKEN: ${{ inputs.snyk-token }}
-        MAVEN_OPTS: "-s ${{ github.workspace }}/.github/settings.xml"
       run: |
         snyk test \
         --package-manager=maven \
@@ -36,7 +43,6 @@ runs:
       shell: bash
       env:
         SNYK_TOKEN: ${{ inputs.snyk-token }}
-        MAVEN_OPTS: "-s ${{ github.workspace }}/.github/settings.xml"
       run: |
         snyk test \
         --package-manager=maven \
