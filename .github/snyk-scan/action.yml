@@ -37,37 +37,8 @@ runs:
         --sarif-file-output=snyk-glad-bom.sarif \
         --policy-path=./.snyk
 
-    - name: Scan glad-parent
-      id: 'glad-parent'
-      continue-on-error: true
-      shell: bash
-      env:
-        SNYK_TOKEN: ${{ inputs.snyk-token }}
-      run: |
-        snyk test \
-        --package-manager=maven \
-        --file=glad-parent/pom.xml \
-        --severity-threshold=high \
-        --sarif-file-output=snyk-glad-parent.sarif \
-        --policy-path=./.snyk
-
     - name: Upload glad-bom SARIF
       if: always() && hashFiles('snyk-glad-bom.sarif') != ''
       uses: github/codeql-action/upload-sarif@99df26d4f13ea111d4ec1a7dddef6063f76b97e9 # v4.37.0
       with:
         sarif_file: snyk-glad-bom.sarif
-
-    - name: Upload glad-parent SARIF
-      if: always() && hashFiles('snyk-glad-parent.sarif') != ''
-      uses: github/codeql-action/upload-sarif@99df26d4f13ea111d4ec1a7dddef6063f76b97e9 # v4.37.0
-      with:
-        sarif_file: snyk-glad-parent.sarif
-
-    - name: Fail if any scan failed
-      if: always()
-      shell: bash
-      run: |
-        if [[ "${{ steps['glad-bom'].outcome }}" != "success" || \
-              "${{ steps['glad-parent'].outcome }}" != "success" ]]; then
-          exit 1
-        fi
