@@ -25,10 +25,17 @@ jobs:
         with:
           distribution: corretto
           java-version: '25'
+          server-id: github
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
 
       - name: Build Maven reactor
         run: |
-          mvn --batch-mode install -DskipTests
+          mvn --batch-mode \
+            --settings .github/settings.xml \
+            install -DskipTests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Snyk Scan
         uses: ./.github/snyk-scan
