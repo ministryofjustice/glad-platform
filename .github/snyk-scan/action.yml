@@ -21,6 +21,7 @@ runs:
       shell: bash
       env:
         SNYK_TOKEN: ${{ inputs.snyk-token }}
+        MAVEN_OPTS: "-s ${{ github.workspace }}/.github/settings.xml"
       run: |
         snyk test \
         --package-manager=maven \
@@ -35,6 +36,7 @@ runs:
       shell: bash
       env:
         SNYK_TOKEN: ${{ inputs.snyk-token }}
+        MAVEN_OPTS: "-s ${{ github.workspace }}/.github/settings.xml"
       run: |
         snyk test \
         --package-manager=maven \
