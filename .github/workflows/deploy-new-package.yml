@@ -1,9 +1,10 @@
 name: Publish Maven Package
 
 on:
-  release:
-    types:
-      - published
+  push:
+    tags:
+      - 'glad-bom-*'
+      - 'glad-parent-*'
 
 permissions:
   contents: read
@@ -19,7 +20,7 @@ jobs:
       - name: Checkout Release Tag
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
-          ref: ${{ github.event.release.tag_name }}
+          ref: ${{ github.ref_name }}
 
       - name: Set up Java
         uses: actions/setup-java@1bcf9fb12cf4aa7d266a90ae39939e61372fe520 # v5.4.0
@@ -34,7 +35,7 @@ jobs:
         id: module
         shell: bash
         run: |
-          TAG="${{ github.event.release.tag_name }}"
+          TAG="${GITHUB_REF_NAME}"
 
           if [[ "$TAG" == glad-bom-* ]]; then
             echo "module=glad-bom" >> "$GITHUB_OUTPUT"
