@@ -27,7 +27,7 @@
         <!-- Version of the BOM imported by this parent.
              This is intentionally independent of the parent version so the BOM
              can be released separately for dependency/CVE updates. -->
-        <glad-bom.version>1.0.0</glad-bom.version>
+        <glad-bom.version>1.1.0</glad-bom.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
