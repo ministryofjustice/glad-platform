@@ -13,7 +13,6 @@
       "release-type": "maven",
       "component": "glad-parent",
       "changelog-path": "CHANGELOG.md",
-      "release-as": "1.1.0"
     }
   }
 }
