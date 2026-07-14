@@ -12,7 +12,7 @@
     "glad-parent": {
       "release-type": "maven",
       "component": "glad-parent",
-      "changelog-path": "CHANGELOG.md",
+      "changelog-path": "CHANGELOG.md"
     }
   }
 }
