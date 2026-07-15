@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v1.1.2...glad-parent-v1.1.3) (2026-07-15)
+
+
+### Bug Fixes
+
+* **LPF-0000:** Bump glad-bom version ([#34](https://github.com/ministryofjustice/glad-platform/issues/34)) ([882310c](https://github.com/ministryofjustice/glad-platform/commit/882310ccb5d9ce406972985dd0df7e7e4097b619))
+
 ## [1.1.2](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v1.1.1...glad-parent-v1.1.2) (2026-07-15)
 
 
