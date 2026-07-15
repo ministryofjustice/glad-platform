@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v1.1.1...glad-parent-v1.1.2) (2026-07-15)
+
+
+### Bug Fixes
+
+* **LPF-0000:** fix import issues and bump openapi version ([#31](https://github.com/ministryofjustice/glad-platform/issues/31)) ([dd6d47a](https://github.com/ministryofjustice/glad-platform/commit/dd6d47a9a58e1b21c2fe1747b3f2f30d64941bc4))
+
 ## [1.1.1](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v1.1.0...glad-parent-v1.1.1) (2026-07-14)
 
 
