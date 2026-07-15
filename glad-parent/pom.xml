@@ -32,6 +32,10 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Common CVE/Snyk Targets -->
+        <logback.version>1.5.37</logback.version>
+        <tomcat.version>11.0.24</tomcat.version>
     </properties>
 
     <dependencyManagement>
@@ -43,6 +47,19 @@
                 <version>${glad-bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- Snyk / CVE Candidates -->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-core</artifactId>
+                <version>${tomcat.version}</version>
             </dependency>
 
         </dependencies>
