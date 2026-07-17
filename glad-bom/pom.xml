@@ -4,7 +4,7 @@
 
     <groupId>uk.gov.laa</groupId>
     <artifactId>glad-bom</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -23,7 +23,7 @@
         <playwright.version>1.61.0</playwright.version>
         <axe.version>4.12.0</axe.version>
         <swagger-annotations.version>2.2.52</swagger-annotations.version>
-        <payforlegalaid-openapi.version>0.0.42</payforlegalaid-openapi.version>
+        <payforlegalaid-openapi.version>0.0.43</payforlegalaid-openapi.version>
     </properties>
 
     <dependencyManagement>
