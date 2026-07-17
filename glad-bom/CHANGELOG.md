@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v1.1.1...glad-bom-v1.1.2) (2026-07-17)
+
+
+### Bug Fixes
+
+* **LPF-000:** Upgrade Openapi version ([#40](https://github.com/ministryofjustice/glad-platform/issues/40)) ([9ebebf8](https://github.com/ministryofjustice/glad-platform/commit/9ebebf8884ecc13de6d024fa80818b17b6bd95c5))
+
 ## [1.1.1](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v1.1.0...glad-bom-v1.1.1) (2026-07-15)
 
 
