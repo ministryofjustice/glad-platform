@@ -34,7 +34,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Common CVE/Snyk Targets -->
-        <logback.version>1.5.37</logback.version>
+        <logback.version>1.5.38</logback.version>
         <tomcat.version>11.0.24</tomcat.version>
     </properties>
 
