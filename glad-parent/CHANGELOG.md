@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v1.1.5...glad-parent-v2.0.0) (2026-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **LPF-1127:** upgrade openapi version to allow SILAS work ([#45](https://github.com/ministryofjustice/glad-platform/issues/45))
+
+### Features
+
+* **LPF-1127:** upgrade openapi version to allow SILAS work ([#45](https://github.com/ministryofjustice/glad-platform/issues/45)) ([6f16307](https://github.com/ministryofjustice/glad-platform/commit/6f16307c97447a7d90e526e5b15fc568afacb587))
+
 ## [1.1.5](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v1.1.4...glad-parent-v1.1.5) (2026-07-17)
 
 
