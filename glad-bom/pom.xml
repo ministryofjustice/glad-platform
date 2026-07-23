@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Platform Versions -->
-        <aws.sdk.version>2.47.5</aws.sdk.version>
+        <aws.sdk.version>2.48.3</aws.sdk.version>
         <cucumber.version>7.34.4</cucumber.version>
         <spring-cloud-azure.version>7.3.0</spring-cloud-azure.version>
         <immutables.version>2.12.2</immutables.version>
