@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.0...glad-bom-v2.0.1) (2026-07-24)
+
+
+### Bug Fixes
+
+* **LPF-000:** bump software.amazon.awssdk:bom from 2.47.5 to 2.48.3 ([#47](https://github.com/ministryofjustice/glad-platform/issues/47)) ([388691a](https://github.com/ministryofjustice/glad-platform/commit/388691afe553a27451a95444b054ffecd494d4ad))
+
 ## [2.0.0](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v1.1.2...glad-bom-v2.0.0) (2026-07-22)
 
 
