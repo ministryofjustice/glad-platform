@@ -1,3 +1,5 @@
+[![Ministry of Justice Repository Compliance Badge](https://github-community.service.justice.gov.uk/repository-standards/api/glad-platform/badge)](https://github-community.service.justice.gov.uk/repository-standards/glad-platform)
+
 # GLAD Platform
 
 The GLAD Platform provides a centralised Maven dependency and build management solution for GLAD services.
@@ -104,7 +106,7 @@ Example relationship:
 
 A consuming GLAD service should inherit from `glad-parent` instead of directly inheriting from:
 
-```xml
+```
 org.springframework.boot:spring-boot-starter-parent
 ```
 
