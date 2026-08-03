@@ -5,6 +5,7 @@
 
 ### Bug Fixes
 
+* **chore:** update version of glad-bom to 2.0.2
 * **bot:** bump ch.qos.logback:logback-core from 1.5.38 to 1.6.0 ([0668a00](https://github.com/ministryofjustice/glad-platform/commit/0668a00feab31258b170c02dbdc890cb8822d954))
 * **bot:** bump ch.qos.logback:logback-core from 1.5.38 to 1.6.0 ([#55](https://github.com/ministryofjustice/glad-platform/issues/55)) ([5c382f8](https://github.com/ministryofjustice/glad-platform/commit/5c382f8d38b6cca65854d1092d4f25c3ce6ef296))
 
