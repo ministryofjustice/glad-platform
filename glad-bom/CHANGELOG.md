@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.2](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.1...glad-bom-v2.0.2) (2026-08-03)
+
+
+### Bug Fixes
+
+* **bot:** bump io.cucumber:cucumber-bom from 7.34.4 to 7.34.6 ([7af720a](https://github.com/ministryofjustice/glad-platform/commit/7af720a1496871e9f3881924ecc143bb30755a62))
+* **bot:** bump io.cucumber:cucumber-bom from 7.34.4 to 7.34.6 ([#54](https://github.com/ministryofjustice/glad-platform/issues/54)) ([38f8378](https://github.com/ministryofjustice/glad-platform/commit/38f8378ab1286f194003bbb682ed6686aee8d7bd))
+* **bot:** bump software.amazon.awssdk:bom from 2.48.3 to 2.49.3 ([86c1218](https://github.com/ministryofjustice/glad-platform/commit/86c121844331a7da33f6e509ff568f1052d9e66b))
+* **bot:** bump software.amazon.awssdk:bom from 2.48.3 to 2.49.3 ([#53](https://github.com/ministryofjustice/glad-platform/issues/53)) ([f1981e2](https://github.com/ministryofjustice/glad-platform/commit/f1981e240d5f91dab433dc14f393d4b7034ece9e))
+* **LPF-000:** Upgrade Openapi version ([#59](https://github.com/ministryofjustice/glad-platform/issues/59)) ([1e2899b](https://github.com/ministryofjustice/glad-platform/commit/1e2899be46274c8a674be85148dc683d51a2d4e5))
+
 ## [2.0.1](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.0...glad-bom-v2.0.1) (2026-07-24)
 
 
