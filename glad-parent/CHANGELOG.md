@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.1](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v2.0.0...glad-parent-v2.0.1) (2026-08-03)
+
+
+### Bug Fixes
+
+* **bot:** bump ch.qos.logback:logback-core from 1.5.38 to 1.6.0 ([0668a00](https://github.com/ministryofjustice/glad-platform/commit/0668a00feab31258b170c02dbdc890cb8822d954))
+* **bot:** bump ch.qos.logback:logback-core from 1.5.38 to 1.6.0 ([#55](https://github.com/ministryofjustice/glad-platform/issues/55)) ([5c382f8](https://github.com/ministryofjustice/glad-platform/commit/5c382f8d38b6cca65854d1092d4f25c3ce6ef296))
+
 ## [2.0.0](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v1.1.5...glad-parent-v2.0.0) (2026-07-22)
 
 
