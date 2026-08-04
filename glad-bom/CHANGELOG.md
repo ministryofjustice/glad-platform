@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.2...glad-bom-v2.0.3) (2026-08-04)
+
+
+### Bug Fixes
+
+* **LPF-000:** Update AWS version to resolve Snyk issue ([#60](https://github.com/ministryofjustice/glad-platform/issues/60)) ([444ecb3](https://github.com/ministryofjustice/glad-platform/commit/444ecb3ddb6badface2ff3c508faba9148ac6871))
+
 ## [2.0.2](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.1...glad-bom-v2.0.2) (2026-08-03)
 
 
