@@ -4,7 +4,7 @@
 
     <groupId>uk.gov.laa</groupId>
     <artifactId>glad-bom</artifactId>
-    <version>2.0.3</version>
+    <version>2.0.4</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -19,7 +19,7 @@
         <poi.version>5.5.1</poi.version>
 
         <!-- Shared Libraries -->
-        <springdoc.version>3.0.3</springdoc.version>
+        <springdoc.version>3.1.0</springdoc.version>
         <playwright.version>1.61.0</playwright.version>
         <axe.version>4.12.0</axe.version>
         <swagger-annotations.version>2.2.53</swagger-annotations.version>
