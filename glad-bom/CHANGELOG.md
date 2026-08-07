@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.4](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.3...glad-bom-v2.0.4) (2026-08-07)
+
+
+### Bug Fixes
+
+* **bot:** bump com.azure.spring:spring-cloud-azure-dependencies ([e9c3deb](https://github.com/ministryofjustice/glad-platform/commit/e9c3deb46a900b2cd77a2e64fd0936f2dc1c3d55))
+* **bot:** bump com.azure.spring:spring-cloud-azure-dependencies from 7.3.0 to 7.4.0 ([#64](https://github.com/ministryofjustice/glad-platform/issues/64)) ([19750d3](https://github.com/ministryofjustice/glad-platform/commit/19750d30e4dc95f8139581c67aa17accbe97f274))
+* **bot:** bump io.swagger.core.v3:swagger-annotations ([cf48299](https://github.com/ministryofjustice/glad-platform/commit/cf48299140b7b3266b296604b935edad9e8a1f75))
+* **bot:** bump io.swagger.core.v3:swagger-annotations from 2.2.52 to 2.2.53 ([#66](https://github.com/ministryofjustice/glad-platform/issues/66)) ([c404ff1](https://github.com/ministryofjustice/glad-platform/commit/c404ff132370a6ebcbc46552911b83666c4f2620))
+* **bot:** bump org.springdoc:springdoc-openapi-starter-webmvc-ui ([1b807bd](https://github.com/ministryofjustice/glad-platform/commit/1b807bde6160a0d0e67cb52e1d8a2a0aed6a7177))
+* **bot:** bump org.springdoc:springdoc-openapi-starter-webmvc-ui from 3.0.3 to 3.1.0 ([#67](https://github.com/ministryofjustice/glad-platform/issues/67)) ([4043b09](https://github.com/ministryofjustice/glad-platform/commit/4043b09d3c54a467898c184deb07c0ad1166b16a))
+* **bot:** bump software.amazon.awssdk:bom from 2.49.6 to 2.50.2 ([e3236a5](https://github.com/ministryofjustice/glad-platform/commit/e3236a5db14c9f15a58d3c310fd0f1294094f2df))
+* **bot:** bump software.amazon.awssdk:bom from 2.49.6 to 2.50.2 ([#68](https://github.com/ministryofjustice/glad-platform/issues/68)) ([3a71a9d](https://github.com/ministryofjustice/glad-platform/commit/3a71a9d71b7e4106889ab0e84d723e34be8554a2))
+
 ## [2.0.3](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.2...glad-bom-v2.0.3) (2026-08-04)
 
 
