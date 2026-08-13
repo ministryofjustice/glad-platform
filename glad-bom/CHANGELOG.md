@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.4...glad-bom-v2.1.0) (2026-08-13)
+
+
+### Features
+
+* **LPF-1559:** remove openapi dependency ([#71](https://github.com/ministryofjustice/glad-platform/issues/71)) ([6affa86](https://github.com/ministryofjustice/glad-platform/commit/6affa86f3aad32830e02764f63020878d8119b74))
+
 ## [2.0.4](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.3...glad-bom-v2.0.4) (2026-08-07)
 
 
