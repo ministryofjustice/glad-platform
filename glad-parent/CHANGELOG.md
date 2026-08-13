@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v2.0.3...glad-parent-v2.1.0) (2026-08-13)
+
+
+### Features
+
+* **LPF-1559:** bump bom to 2.1.0 ([#73](https://github.com/ministryofjustice/glad-platform/issues/73)) ([13fd612](https://github.com/ministryofjustice/glad-platform/commit/13fd6129cd8c22f02fae4a80a869f6cfcfe6a20f))
+
 ## [2.0.3](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v2.0.2...glad-parent-v2.0.3) (2026-08-07)
 
 
