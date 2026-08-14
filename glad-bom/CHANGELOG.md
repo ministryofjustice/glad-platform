@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.1.1](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.1.0...glad-bom-v2.1.1) (2026-08-14)
+
+
+### Bug Fixes
+
+* **bot:** bump com.microsoft.playwright:playwright from 1.61.0 to 1.62.0 ([86b7ee7](https://github.com/ministryofjustice/glad-platform/commit/86b7ee7be370407f3cd610514ffdd5e63ac561b1))
+* **bot:** bump com.microsoft.playwright:playwright from 1.61.0 to 1.62.0 ([#76](https://github.com/ministryofjustice/glad-platform/issues/76)) ([712bdd0](https://github.com/ministryofjustice/glad-platform/commit/712bdd0ecca60a12c60a5c1b2e4b0be7c868ca1e))
+* **bot:** bump software.amazon.awssdk:bom from 2.50.2 to 2.51.3 ([d7ecf1d](https://github.com/ministryofjustice/glad-platform/commit/d7ecf1d2811b88c03117058586f722563a1d03af))
+* **bot:** bump software.amazon.awssdk:bom from 2.50.2 to 2.51.3 ([#75](https://github.com/ministryofjustice/glad-platform/issues/75)) ([7a03572](https://github.com/ministryofjustice/glad-platform/commit/7a03572265672fbd02848f480c9219eeec4e6b83))
+
 ## [2.1.0](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.0.4...glad-bom-v2.1.0) (2026-08-13)
 
 
