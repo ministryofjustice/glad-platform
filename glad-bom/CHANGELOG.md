@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.2](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.1.1...glad-bom-v2.1.2) (2026-08-21)
+
+
+### Bug Fixes
+
+* **bot:** bump com.deque.html.axe-core:playwright from 4.12.0 to 4.13.0 ([d18c91a](https://github.com/ministryofjustice/glad-platform/commit/d18c91aa69e3beb194db2af84a3bc01e67a76d6f))
+* **bot:** bump com.deque.html.axe-core:playwright from 4.12.0 to 4.13.0 ([#80](https://github.com/ministryofjustice/glad-platform/issues/80)) ([1416420](https://github.com/ministryofjustice/glad-platform/commit/14164205bf00215166e6fcc2f3001ebfcda263d0))
+* **bot:** bump io.cucumber:cucumber-bom from 7.34.6 to 7.34.7 ([54aa709](https://github.com/ministryofjustice/glad-platform/commit/54aa70949d3294518940999819439c2e49543371))
+* **bot:** bump io.cucumber:cucumber-bom from 7.34.6 to 7.34.7 ([#82](https://github.com/ministryofjustice/glad-platform/issues/82)) ([4f8e08c](https://github.com/ministryofjustice/glad-platform/commit/4f8e08c0b1cc5557f704046becc02d7c9dd2180a))
+* **bot:** bump software.amazon.awssdk:bom from 2.51.3 to 2.53.1 ([06f7b3b](https://github.com/ministryofjustice/glad-platform/commit/06f7b3b56428ad975c4824839d0568b5aafb42b5))
+* **bot:** bump software.amazon.awssdk:bom from 2.51.3 to 2.53.1 ([#79](https://github.com/ministryofjustice/glad-platform/issues/79)) ([b156381](https://github.com/ministryofjustice/glad-platform/commit/b15638122f0b10769f6b39adc2bf78180e6bdfdb))
+
 ## [2.1.1](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.1.0...glad-bom-v2.1.1) (2026-08-14)
 
 
