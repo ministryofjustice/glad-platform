@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.0</version>
+        <version>4.1.1</version>
 
         <!-- Disable local relative path resolution to avoid issues with Maven's parent POM resolution in
         multi-module projects. This ensures that the correct parent POM is used, regardless of the local
@@ -27,11 +27,16 @@
         <!-- Version of the BOM imported by this parent.
              This is intentionally independent of the parent version so the BOM
              can be released separately for dependency/CVE updates. -->
-        <glad-bom.version>2.1.0</glad-bom.version>
+        <glad-bom.version>2.1.2</glad-bom.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Spring and OpenAPI Version overrides -->
+        <spring-security.version>7.1.1</spring-security.version>
+        <springdoc-oas.version>3.0.3</springdoc-oas.version>
+        <openapi-generator.version>7.24.0</openapi-generator.version>
 
         <!-- Common CVE/Snyk Targets -->
         <logback.version>1.6.3</logback.version>
