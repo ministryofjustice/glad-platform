@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v2.1.1...glad-parent-v2.1.2) (2026-08-27)
+
+
+### Bug Fixes
+
+* **LPF-0000:** Snyk fixes  ([#86](https://github.com/ministryofjustice/glad-platform/issues/86)) ([41901fe](https://github.com/ministryofjustice/glad-platform/commit/41901fe0ea96ca64b293b2b4df401b5e57e9580f))
+
 ## [2.1.1](https://github.com/ministryofjustice/glad-platform/compare/glad-parent-v2.1.0...glad-parent-v2.1.1) (2026-08-21)
 
 
