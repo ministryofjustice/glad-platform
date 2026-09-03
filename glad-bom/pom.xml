@@ -22,7 +22,7 @@
         <springdoc.version>3.1.0</springdoc.version>
         <playwright.version>1.62.0</playwright.version>
         <axe.version>4.13.0</axe.version>
-        <swagger-annotations.version>2.2.54</swagger-annotations.version>
+        <swagger-annotations.version>2.2.55</swagger-annotations.version>
     </properties>
 
     <dependencyManagement>
