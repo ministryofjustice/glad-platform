@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.1.3](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.1.2...glad-bom-v2.1.3) (2026-09-03)
+
+
+### Bug Fixes
+
+* **bot:** bump io.swagger.core.v3:swagger-annotations ([e63965d](https://github.com/ministryofjustice/glad-platform/commit/e63965d90a67d21653e88749372d573b79c28a2c))
+* **bot:** bump io.swagger.core.v3:swagger-annotations from 2.2.53 to 2.2.54 ([#89](https://github.com/ministryofjustice/glad-platform/issues/89)) ([86fcc2c](https://github.com/ministryofjustice/glad-platform/commit/86fcc2cdb07ac7b86f7b90b764b3677580fb0a01))
+* **bot:** bump software.amazon.awssdk:bom from 2.53.1 to 2.54.2 ([8122f6e](https://github.com/ministryofjustice/glad-platform/commit/8122f6e026c99d67ca5f97da196ce62789f7e5f3))
+* **bot:** bump software.amazon.awssdk:bom from 2.53.1 to 2.54.2 ([#88](https://github.com/ministryofjustice/glad-platform/issues/88)) ([e4e7881](https://github.com/ministryofjustice/glad-platform/commit/e4e78812563c12c33e0e325a49a383e2a82ded24))
+
 ## [2.1.2](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.1.1...glad-bom-v2.1.2) (2026-08-21)
 
 
