@@ -38,6 +38,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Snyk Scan
-        uses: ./.github/snyk-scan
+        uses: ./.github/actions/snyk-scan
         with:
           snyk-token: ${{ secrets.SNYK_TOKEN }}

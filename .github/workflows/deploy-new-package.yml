@@ -111,7 +111,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Snyk Scan
-        uses: './.github/snyk-scan'
+        uses: './.github/actions/snyk-scan'
         with:
           snyk-token: ${{ secrets.SNYK_TOKEN }}
         env:
