@@ -10,7 +10,9 @@ updates:
     cooldown:
       default-days: 3
   - package-ecosystem: "github-actions"
-    directory: "/"
+    directories:
+      - "/"
+      - "/.github/actions/*"
     schedule:
       interval: "weekly"
     commit-message:
