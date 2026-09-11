@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.1.4](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.1.3...glad-bom-v2.1.4) (2026-09-11)
+
+
+### Bug Fixes
+
+* **bot:** bump io.cucumber:cucumber-bom from 7.34.7 to 7.34.8 ([5608cac](https://github.com/ministryofjustice/glad-platform/commit/5608caca1cffc358323d130ea7d2420c90e50650))
+* **bot:** bump io.cucumber:cucumber-bom from 7.34.7 to 7.34.8 ([#104](https://github.com/ministryofjustice/glad-platform/issues/104)) ([2b5b6c6](https://github.com/ministryofjustice/glad-platform/commit/2b5b6c6f19edb586c8e7054073dceabdce791bfa))
+* **bot:** bump io.swagger.core.v3:swagger-annotations ([bc66e71](https://github.com/ministryofjustice/glad-platform/commit/bc66e71347f97b0322b13b2e57e57c888b67ff9a))
+* **bot:** bump io.swagger.core.v3:swagger-annotations from 2.2.54 to 2.2.55 ([#94](https://github.com/ministryofjustice/glad-platform/issues/94)) ([98cf823](https://github.com/ministryofjustice/glad-platform/commit/98cf823a174407b2048817b1d7d4de0b3f89d959))
+* **bot:** bump org.springdoc:springdoc-openapi-starter-webmvc-ui ([2797f1a](https://github.com/ministryofjustice/glad-platform/commit/2797f1a747359d489e017e47866a3b5f341a6a18))
+* **bot:** bump org.springdoc:springdoc-openapi-starter-webmvc-ui from 3.1.0 to 3.1.1 ([#103](https://github.com/ministryofjustice/glad-platform/issues/103)) ([cceda82](https://github.com/ministryofjustice/glad-platform/commit/cceda8234fe289a4b3b255a932711eca74d4e595))
+* **bot:** bump software.amazon.awssdk:bom from 2.54.12 to 2.54.13 ([7a70049](https://github.com/ministryofjustice/glad-platform/commit/7a70049a6a4a72fa7a47ba494e7b49c627e9404a))
+* **bot:** bump software.amazon.awssdk:bom from 2.54.12 to 2.54.13 ([#102](https://github.com/ministryofjustice/glad-platform/issues/102)) ([dd442c6](https://github.com/ministryofjustice/glad-platform/commit/dd442c6b2383af6eed4ebb1de977ac8d6f32c22e))
+* **bot:** bump software.amazon.awssdk:bom from 2.54.2 to 2.54.7 ([ab96bc8](https://github.com/ministryofjustice/glad-platform/commit/ab96bc80678208362e46f9a68b46651efa6807a4))
+* **bot:** bump software.amazon.awssdk:bom from 2.54.2 to 2.54.7 ([#93](https://github.com/ministryofjustice/glad-platform/issues/93)) ([62be54c](https://github.com/ministryofjustice/glad-platform/commit/62be54c21bbaeeaac3e1aef77a1e6ba9ddacbf56))
+* **bot:** bump software.amazon.awssdk:bom from 2.54.7 to 2.54.12 ([c1e9436](https://github.com/ministryofjustice/glad-platform/commit/c1e9436c72c4e671e30fdec10af259f40a0e4c80))
+* **bot:** bump software.amazon.awssdk:bom from 2.54.7 to 2.54.12 ([#99](https://github.com/ministryofjustice/glad-platform/issues/99)) ([0cd12b2](https://github.com/ministryofjustice/glad-platform/commit/0cd12b299ff2ff5a4eb60bd4068d85dc382e2bae))
+
 ## [2.1.3](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.1.2...glad-bom-v2.1.3) (2026-09-03)
 
 
