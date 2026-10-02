@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.5](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.1.4...glad-bom-v2.1.5) (2026-10-02)
+
+
+### Bug Fixes
+
+* **bot:** bump com.microsoft.playwright:playwright from 1.62.0 to 1.63.0 ([bd0d4a0](https://github.com/ministryofjustice/glad-platform/commit/bd0d4a06acd1cace218217bdd87662603221c64b))
+* **bot:** bump com.microsoft.playwright:playwright from 1.62.0 to 1.63.0 ([#111](https://github.com/ministryofjustice/glad-platform/issues/111)) ([8481e10](https://github.com/ministryofjustice/glad-platform/commit/8481e105c04589b3507fa50a0e8a1c36027660a3))
+* **bot:** bump io.cucumber:cucumber-bom from 7.34.8 to 8.0.3 ([a919f8e](https://github.com/ministryofjustice/glad-platform/commit/a919f8ebc7daa8f67636dec89c775a8cca42ff1a))
+* **bot:** bump io.cucumber:cucumber-bom from 7.34.8 to 8.0.3 ([#116](https://github.com/ministryofjustice/glad-platform/issues/116)) ([08c7299](https://github.com/ministryofjustice/glad-platform/commit/08c729919cd39ebc0f5e8c7825a7f743dde4da8b))
+* **bot:** bump software.amazon.awssdk:bom from 2.54.13 to 2.55.1 ([35e4118](https://github.com/ministryofjustice/glad-platform/commit/35e41182bb8d4d2e74906c2214fb66576151ff50))
+* **bot:** bump software.amazon.awssdk:bom from 2.54.13 to 2.55.1 ([#110](https://github.com/ministryofjustice/glad-platform/issues/110)) ([ff10c6b](https://github.com/ministryofjustice/glad-platform/commit/ff10c6bb8dbc1fc18b11ad057c6e5aee7347dfe6))
+* **bot:** bump software.amazon.awssdk:bom from 2.55.1 to 2.55.6 ([e604bce](https://github.com/ministryofjustice/glad-platform/commit/e604bce4649bdc3335b042256522fcd85e78c6d4))
+* **bot:** bump software.amazon.awssdk:bom from 2.55.1 to 2.55.6 ([#117](https://github.com/ministryofjustice/glad-platform/issues/117)) ([1208850](https://github.com/ministryofjustice/glad-platform/commit/1208850af5fba783c53861539632b2a4693ce79b))
+
 ## [2.1.4](https://github.com/ministryofjustice/glad-platform/compare/glad-bom-v2.1.3...glad-bom-v2.1.4) (2026-09-11)
 
 
